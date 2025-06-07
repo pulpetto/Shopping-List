@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_list/widgets/grocery_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,19 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Groceries',
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 10, 10, 10),
-          centerTitle: true,
-          title: Text(
-            'Flutter Groceries',
-            style: TextStyle(fontWeight: FontWeight.w500, color: Colors.white),
-          ),
-        ),
-        body: Container(),
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Groceries',
+        home: GroceryList());
   }
 }
